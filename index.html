@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <!-- Bắt buộc phải có dòng này để trình duyệt mobile hiển thị đúng kích thước -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>F2F Matches</title>
+  <style>
+    /* Reset CSS để iframe tràn viền tuyệt đối, không bị cuộn kép */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <iframe
-    src="https://script.google.com/macros/s/AKfycbwotZso17kWbjkRLaCazL34EWJL3nusYD1EMNBHdi9DeD3KzFRNVVoIVpLd2ZObtyYu/exec"
-    style="width:100%;height:100vh;border:none;display:block;">
-</iframe>
+    src="https://script.google.com/macros/s/AKfycbwotZso17kWbjkRLaCazL34EWJL3nusYD1EMNBHdi9DeD3KzFRNVVoIVpLd2ZObtyYu/exec">
+  </iframe>
 </body>
 </html>
